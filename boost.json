@@ -13,6 +13,7 @@
         "vscode"
     ],
     "guidelines": [
-        "laravel/fortify"
+        "laravel/fortify",
+        "filament/filament"
     ]
 }

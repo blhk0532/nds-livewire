@@ -64,3 +64,24 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+div.fc-daygrid-day-events{
+    padding:0px!important;
+    margin:0px!important;
+}
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    min-height: 2em;
+    position: relative;
+    padding:0px!important;
+    margin:0px!important;
+}
+
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
+    padding:0px!important;
+    margin:0px!important;
+}
+
+.fc .fc-daygrid-body-natural .fc-daygrid-day-events{
+    padding:0px!important;
+    margin:0px!important;
+}

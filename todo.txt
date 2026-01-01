@@ -1,0 +1,13 @@
+we have to create a new booking caledar for the filament-booking plugin (similar to the schedule calendar), 
+we also have to create new database tables for the booking caledar - booking_locations, booking schedule.
+the booking_schedule table is for setting a specified location for each day to show in the bookings caledar
+we display location in the first row 'allDayText: "location"' above before of the booking caledar time slots.
+the booking calendar must show display create booking modal and save bookings in the booking_bookings table.
+in the booking_bookings table we have to change shipping_price and shipping_method to start_time and end_time -
+we also have to add service_date, service_note, is_active, notified_at, confirmed_at, completed_at columns -
+and set swedish kronor as default currency and sweden as default country in the booking model and create modal.
+
+the idea and usecase for this is that we have agents users working in callcenter booking service jobs in sweden
+and the users with role=service are the service technicians performing the service jobs that the agents booked
+so its important to keep track of who what agent made the booking and for what location and service technicians
+and its alos important that new client is created when an agent makes a new booking in the booking calendar
