@@ -3,8 +3,7 @@
         "copilot",
         "cursor",
         "gemini",
-        "opencode",
-        "phpstorm"
+        "opencode"
     ],
     "editors": [
         "cursor",

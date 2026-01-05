@@ -8,13 +8,27 @@
     "require": {
         "php": "^8.2",
         "adultdate/filament-booking": "@dev",
-        "adultdate/schedule": "@dev",
+        "andreiio/blade-remix-icon": "^3.8",
+        "codeat3/blade-google-material-design-icons": "^1.20",
+        "codeat3/blade-phosphor-icons": "^2.3",
+        "dashed/filament-numpad-field": "^1.0",
+        "davidhsianturi/blade-bootstrap-icons": "^2.1",
+        "dvarilek/filament-converse": "dev-main",
         "filament/filament": "^4.4",
         "laravel/fortify": "^1.30",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "laraveljutsu/zap": "*",
         "livewire/flux": "^2.9.0",
-        "livewire/volt": "^1.7.0"
+        "livewire/volt": "^1.7.0",
+        "mallardduck/blade-lucide-icons": "^1.26",
+        "owenvoke/blade-fontawesome": "^3.0",
+        "secondnetwork/blade-tabler-icons": "^3.36",
+        "shreejan/dash-arrange": "^1.0",
+        "statikbe/laravel-chained-translator": "^2.5",
+        "statikbe/laravel-filament-chained-translation-manager": "^4.2",
+        "wallacemartinss/filament-icon-picker": "^1.4",
+        "ysfkaya/filament-phone-input": "^4.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -31,13 +45,6 @@
         {
             "type": "path",
             "url": "plugins/adultdate/filament-booking",
-            "options": {
-                "symlink": true
-            }
-        },
-                {
-            "type": "path",
-            "url": "plugins/adultdate/filament-schedule",
             "options": {
                 "symlink": true
             }

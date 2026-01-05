@@ -1,0 +1,26 @@
+{
+    "name": "awcodes/headings",
+    "description": "A headings component for Filament",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Weston",
+            "email": "awcodes1@gmail.com"
+        }
+    ],
+    "require": {
+        "filament/support": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Awcodes\\Headings\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Awcodes\\Headings\\HeadingsServiceProvider"
+            ]
+        }
+    }
+}

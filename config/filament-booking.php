@@ -44,10 +44,10 @@ return [
     |
     */
     'features' => [
-        'brands' => true,
-        'categories' => true,
-        'customers' => true,
-        'orders' => true,
-        'products' => true,
+        'booking_brands' => true,
+        'booking_categories' => true,
+        'booking_customers' => true,
+        'booking_orders' => true,
+        'booking_products' => true,
     ],
 ];

@@ -3,31 +3,15 @@
 @source '../../../../app/Filament/**/*';
 @source '../../../../resources/views/filament/**/*';
 
-@import '../../../../plugins/adultdate/filament-schedule/resources/css/theme.css';
-@import '../../../../plugins/adultdate/filament-schedule/resources/css/filament-fullcalendar.css';
-@source '../../../../plugins/adultdate/filament-schedule/resources/views/**/*.blade.php';
-
+@import '../../../../plugins/adultdate/filament-booking/resources/css/calendar.css';
+@import '../../../../plugins/adultdate/filament-booking/resources/css/filament-fullcalendar.css';
 @import '../../../../plugins/adultdate/filament-booking/resources/css/theme.css';
 @source '../../../../plugins/adultdate/filament-booking/resources/views/**/*.blade.php';
 
+@source '../../../../vendor/statikbe/laravel-filament-chained-translation-manager/resources/**/*.blade.php';
+@source '../../../../vendor/dashed/**/*.blade.php';
 
-div.fc-daygrid-day-events{
-    padding:0px!important;
-    margin:0px!important;
-}
-.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
-    min-height: 2em;
-    position: relative;
-    padding:0px!important;
-    margin:0px!important;
-}
+@source '../../../../vendor/wallacemartinss/filament-icon-picker/resources/views/**/*';
 
-.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
-    padding:0px!important;
-    margin:0px!important;
-}
 
-.fc .fc-daygrid-body-natural .fc-daygrid-day-events{
-    padding:0px!important;
-    margin:0px!important;
-}
+@source '../../../../vendor/wallacemartinss/filament-icon-picker/resources/views/**/*';

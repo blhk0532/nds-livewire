@@ -13,16 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('booking_order_addresses', function (Blueprint $table): void {
-            $table->id();
-            $table->morphs('booking_addressable', 'booking_order_addressable_index');
-            $table->string('country')->nullable();
-            $table->string('street')->nullable();
-            $table->string('city')->nullable();
-            $table->string('state')->nullable();
-            $table->string('zip')->nullable();
-            $table->timestamps();
-        });
+        $hasTable = Schema::hasTable('booking_order_addresses');
+        if (! $hasTable) {
+            Schema::create('booking_order_addresses', function (Blueprint $table): void {
+                $table->id();
+                $table->morphs('booking_addressable', 'bk_addr_type_id');
+                $table->string('country')->nullable();
+                $table->string('street')->nullable();
+                $table->string('city')->nullable();
+                $table->string('state')->nullable();
+                $table->string('zip')->nullable();
+                $table->timestamps();
+            });
+        }
     }
 
     /**

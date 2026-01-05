@@ -8,11 +8,17 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 use Laravel\Fortify\TwoFactorAuthenticatable;
+use Zap\Models\Concerns\HasSchedules;
 
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, TwoFactorAuthenticatable;
+    use HasFactory, HasSchedules, Notifiable, TwoFactorAuthenticatable;
+
+    /**
+     * @method array getBookableSlots(string $date, int $slotDuration = 60, ?int $bufferMinutes = null)
+     * @method array getAvailableSlots(string $date, string $dayStart = '09:00', string $dayEnd = '17:00', int $slotDuration = 60, ?int $bufferMinutes = null)
+     */
 
     /**
      * The attributes that are mass assignable.
@@ -23,6 +29,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'email_verified_at',
     ];
 
     /**
@@ -47,7 +55,13 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'role' => \App\UserRole::class,
         ];
+    }
+
+    public function calendars()
+    {
+        return $this->hasMany(\App\Models\BookingCalendar::class, 'owner_id');
     }
 
     /**
