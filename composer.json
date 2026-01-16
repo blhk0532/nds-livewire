@@ -25,6 +25,7 @@
         "owenvoke/blade-fontawesome": "^3.0",
         "secondnetwork/blade-tabler-icons": "^3.36",
         "shreejan/dash-arrange": "^1.0",
+        "spatie/laravel-permission": "^6.24",
         "statikbe/laravel-chained-translator": "^2.5",
         "statikbe/laravel-filament-chained-translation-manager": "^4.2",
         "wallacemartinss/filament-icon-picker": "^1.4",

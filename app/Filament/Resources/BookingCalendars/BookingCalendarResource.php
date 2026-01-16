@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Filament\Resources\BookingCalendars;
+namespace App\Filament\Resources;
 
-use App\Filament\Resources\BookingCalendars\Pages\CreateBookingCalendar;
-use App\Filament\Resources\BookingCalendars\Pages\EditBookingCalendar;
-use App\Filament\Resources\BookingCalendars\Pages\ListBookingCalendars;
-use App\Filament\Resources\BookingCalendars\Schemas\BookingCalendarForm;
-use App\Filament\Resources\BookingCalendars\Tables\BookingCalendarsTable;
+use Adultdate\FilamentBooking\Filament\Resources\BookingCalendars\Pages\CreateBookingCalendar;
+use Adultdate\FilamentBooking\Filament\Resources\BookingCalendars\Pages\EditBookingCalendar;
+use Adultdate\FilamentBooking\Filament\Resources\BookingCalendars\Pages\ListBookingCalendars;
+use Adultdate\FilamentBooking\Filament\Resources\BookingCalendars\Schemas\BookingCalendarForm;
+use Adultdate\FilamentBooking\Filament\Resources\BookingCalendars\Tables\BookingCalendarsTable;
 use App\Models\BookingCalendar;
 use BackedEnum;
 use Filament\Resources\Resource;

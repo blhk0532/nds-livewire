@@ -2,7 +2,7 @@
 
 namespace App\Filament\Resources\BookingCalendars\Pages;
 
-use App\Filament\Resources\BookingCalendars\BookingCalendarResource;
+use Adultdate\FilamentBooking\Filament\Resources\BookingCalendars\BookingCalendarResource;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateBookingCalendar extends CreateRecord

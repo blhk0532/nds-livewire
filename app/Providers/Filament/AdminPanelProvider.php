@@ -6,8 +6,9 @@ use Adultdate\FilamentBooking\Filament\Pages\CalendarSettingsPage;
 use Adultdate\FilamentBooking\Filament\Widgets\AccountWidget;
 // use App\Filament\Pages\AppDashboard;
 use Adultdate\FilamentBooking\FilamentBookingPlugin;
-use Filament\Http\Middleware\Authenticate;
+use Filament\Enums\ThemeMode;
 // use Filament\Pages\Dashboard;
+use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -37,6 +38,22 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->sidebarCollapsibleOnDesktop()
+            //    ->globalSearch(position: GlobalSearchPosition::Sidebar)
+            ->favicon(asset('favicon.svg'))
+            ->defaultThemeMode(ThemeMode::Dark)
+            ->brandLogo(asset('logo.webp'))
+            ->brandLogoHeight('2rem')
+            ->brandName('Noridic Digital')
+            ->brandLogo(fn () => view('filament-booking::logo'))
+            ->login()
+            ->revealablePasswords(true)
+            ->registration(false)
+            ->passwordReset()
+            ->emailVerification(false)
+            ->emailChangeVerification()
+            ->profile()
+            ->globalSearchKeyBindings(['command+k', 'ctrl+k'])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             // ->discoverPages(in: app_path('plugins/adultdate/filament-booking/src/Filament/Pages'), for: 'Adultdate\\FilamentBooking\\Filament\\Pages')

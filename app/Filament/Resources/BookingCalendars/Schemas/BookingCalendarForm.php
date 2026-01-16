@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources\BookingCalendars\Schemas;
 
-use App\Models\User;
-use App\UserRole;
+use Adultdate\FilamentBooking\Models\User;
+use Adultdate\FilamentBooking\UserRole;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;

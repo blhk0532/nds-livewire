@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\BookingDataLeads;
+namespace App\Filament\Resources;
 
 use App\Filament\Resources\BookingDataLeads\Pages\CreateBookingDataLead;
 use App\Filament\Resources\BookingDataLeads\Pages\EditBookingDataLead;
